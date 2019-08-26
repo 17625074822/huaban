@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- 关键字 -->
+    <meta
+      name="keywords"
+      content="花瓣网,花瓣,图片大全,设计灵感,创意灵感,素材下载,花瓣网素材图库,矢量图,矢量图库,图片素材,网页素材,免费素材,PS素材,网站素材,设计模板,设计素材,网页模板免费下载,素材,免费设计"
+    />
+    <!-- 描述 -->
+    <meta
+      name="description"
+      content="花瓣网, 设计师寻找灵感的天堂！图片素材领导者，帮你采集、发现网络上你喜欢的事物。你可以用它收集灵感,保存有用的素材,计划旅行,晒晒自己想要的东西"
+    />
+    <title>
+      花瓣网_陪你做生活的设计师（创意灵感天堂，搜索、发现设计灵感、设计素材）
+    </title>
+    <!-- 引入标题图标 -->
+    <link rel="shortcut icon" href="/images/touch-icon-iphone.png" />
+    <!-- css初始化 -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <!-- 引入css文件 -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- 引入字体图标 -->
+    <link
+      rel="stylesheet"
+      href="http://at.alicdn.com/t/font_1367884_bq5cfxkyaz.css"
+    />
+  </head>
+  <body>
+    <div id="max-body">
+      <!-- 头部Header开始 -->
+      <Header id="header-wrap">
+        <!-- 头部导航条 -->
+        <nav id="header">
+          <!-- 左边头部菜单栏 -->
+          <div id="header-menu">
+            <ul>
+              <li id="header-logo">
+                <a href=""> <img src="/images/logo.svg" alt=""/></a>
+              </li>
+              <li><a href=""> 首页</a></li>
+              <li><a href=""> 发现</a></li>
+              <li><a href=""> 最新</a></li>
+              <!-- 更多 -->
+              <li id="more">
+                <a href="">
+                  <i class="iconfont icon-more"></i>
+                </a>
+              </li>
+              <!-- 分割线 -->
+              <li class="line"></li>
+              <li><a href=""> 活动</a></li>
+              <li><a href=""> 美素</a></li>
+              <li><a href=""> 设计服务</a></li>
+              <li><a href=""> 花瓣LIVE</a></li>
+              <li><a href=""> 花瓣Pro</a></li>
+            </ul>
+          </div>
+          <!-- 右边登录栏 -->
+          <div id="login-wrap">
+            <ul id="header-login">
+              <li id="signIn"><a href="">登录</a></li>
+              <li id="signUp"><a href="">注册</a></li>
+            </ul>
+          </div>
+          <!-- 搜索框 -->
+          <div id="search">
+            <div id="getInfo">
+              <p>
+                采集
+                <i class="iconfont icon-xia"></i>
+              </p>
+            </div>
+            <input
+              id="header-search-input"
+              type="text"
+              placeholder="搜索你喜欢的"
+            />
+            <a href="">
+              <i class="iconfont icon-sousuo"></i>
+            </a>
+          </div>
+        </nav>
+      </Header>
+      <!-- 头部Header结束 -->
+
+      <!-- 标题 title 开始 -->
+      <div id="title-wrap">
+        <!-- 标题 -->
+        <div id="title">
+          <div id="title-logo">
+            <img src="/images/illustration.svg" alt="" />
+          </div>
+          <!-- 导航 -->
+          <nav id="title-nav">
+            <ul>
+              <li><a href="">采集</a></li>
+              <li><a href="">推荐花板</a></li>
+              <li><a href="">推荐用户</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- 标题 title 结束-->
+
+      <!-- 身体 Main 开始-->
+      <div id="main-wrap">
+        <div id="main">
+          <!-- 分类名 -->
+          <div class="libox">
+            <div class="cate-logo">
+              <img src="/images/1.png" alt="" />
+            </div>
+          </div>
+
+          <div class="libox">
+            <div class="cate-logo">
+              <img src="/images/2.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div class="libox">
+            <div class="cate-logo">
+              <img src="/images/3.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div class="libox">
+            <div class="cate-logo">
+              <img src="/images/4.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div class="libox">
+            <div class="cate-logo">
+              <img src="/images/5.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div class="libox">
+            <div class="cate-logo">
+              <img src="/images/6.jpeg" alt="" />
+            </div>
+          </div>
+          <!-- 插画列表 -->
+          <% for(var i = 0; i < imglist.length;i++) { %>
+          <div class="sbox">
+            <!-- 点赞和分享功能盒 -->
+            <div class="active-box">
+              <div class="doShare">
+                <p>
+                  采集
+                </p>
+                <p class="doShare-logo">
+                  <i class="iconfont icon-shandian"></i>
+                </p>
+              </div>
+              <div class="doLove">
+                <p>
+                  <i class="iconfont icon-icon4"></i>
+                </p>
+              </div>
+            </div>
+            <img src="<%=imglist[i].img_path%>" alt="" />
+            <!-- 图片信息 -->
+            <div class="img-info">
+              <!-- 图片名字 -->
+              <div class="img-name">
+                <p class="name">緋本アリス/TSCRのイラスト</p>
+                <!-- 分享和点赞数 -->
+                <p class="share-love">
+                  <i class=" share iconfont icon-lightning ">
+                    <small>19</small>
+                  </i>
+                  <i class=" love iconfont icon-icon4">
+                    <small>3</small>
+                  </i>
+                </p>
+              </div>
+              <!-- 作者 -->
+              <div class="actor-box">
+                <!-- 作者头像 -->
+                <div class="actor-tx">
+                  <img src="/images/tx.jpeg" alt="" />
+                </div>
+                <!-- 作者信息 -->
+                <div class="actor-info">
+                  <!-- 作者名字 -->
+                  <div class="actor-name">
+                    <p>
+                      <small>小猴子</small>
+                      <small>采集到</small>
+                    </p>
+                  </div>
+                  <!-- 图片来源 -->
+                  <div class="img-type">
+                    <p>
+                      <small>
+                        绘画-插画
+                      </small>
+                    </p>
+                  </div>
+                </div>
+                <!-- 评论按钮-->
+                <div class="pinglun">
+                  <i class="iconfont icon-zuojiantou"></i>
+                </div>
+              </div>
+              <!-- 评论框 -->
+              <div class="pinglun-box">
+                <!-- 评论内容 -->
+                <div class="pinglun-content">
+                  <img src="/images/pltx.jpeg" alt="" />
+                  <input type="text" placeholder="添加评论或者采集@好友" />
+                  <div class="pinglun-submit">
+                    <input type="submit" value="添加评论" />
+                  </div>
+                </div>
+                <!-- 点击评论 -->
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+    <!-- 身体 Main 结束-->
+
+    <!-- 底部 Footer -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/lazyload.min.js"></script>
+    <script>
+      $('#max-body')
+        .css('background', 'url("/images/time.gif") no-repeat')
+        .css('background-size', 'cover')
+        .css('height', $(document).height())
+      $(window).on('load', function() {
+        setTimeout(function() {
+          $('#max-body>*').css('display', 'block')
+          $('#max-body').css('height', '0px')
+          pubuliu()
+          // 点赞
+          $('.doLove').on('click', function() {
+            $(this)
+              .find('i')
+              .toggleClass('i-love-u')
+          })
+          // 评论出现与消失
+          $('.actor-box').hover(
+            function() {
+              $(this)
+                .find('.pinglun')
+                .stop()
+              $(this)
+                .find('.pinglun')
+                .slideDown()
+            },
+            function() {
+              $(this)
+                .find('.pinglun')
+                .stop()
+              $(this)
+                .find('.pinglun')
+                .slideUp()
+            }
+          )
+
+          // 点击评论
+          $('.pinglun').on('click', function() {
+            $(this)
+              .parent()
+              .next()
+              .stop()
+              .slideToggle('1000')
+          })
+        }, 1000)
+        // 懒加载
+        // $('.sbox > img').lazyload()
+      })
+
+      // <!-- 瀑布流 -->
+      function pubuliu() {
+        var libox = $('.libox')
+        var sbox = $('.sbox')
+        for (var i = 0; i < sbox.length; i++) {
+          var mark = -1
+          for (var j = 0; j < libox.length; j++) {
+            var liHeight = libox[j].offsetHeight
+            // alert(
+            //   '第:' + (j + 1) + '次判断,标记值:' + mark + '列高度:' + liHeight
+            // )
+            if (liHeight < mark || mark == -1) {
+              mark = liHeight
+              var minili = libox[j]
+              $(minili).append(sbox[i])
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
